@@ -84,3 +84,8 @@ topContent[1].querySelector('p').textContent = siteContent['main-content']['abou
 
 TweenMax.from('nav a', 2, { x: -600, y: -50, scale: 0, rotation: 180, ease: SlowMo.ease.config(0.6, 0.2, false) });
 TweenMax.to('nav a', { x: 0, y: 0 });
+
+//Added middle image
+
+const middleImg = document.querySelector('.middle-img');
+middleImg.src = siteContent['main-content']['middle-img-src'];

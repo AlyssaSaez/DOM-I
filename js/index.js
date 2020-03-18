@@ -113,3 +113,8 @@ contactSection[0].querySelector('h4').textContent = siteContent.contact['contact
 contactSectionP[0].textContent = siteContent.contact['address'];
 contactSectionP[1].textContent = siteContent.contact['phone'];
 contactSectionP[2].textContent = siteContent.contact['email'];
+
+//Footer
+
+const footer = document.querySelector('footer p');
+footer.textContent = siteContent.footer['copyright'];

@@ -48,3 +48,19 @@ for (let i = 0; i < navItems.length; i++) {
 	navItems[i].textContent = siteContent.nav[`nav-item-${i + 1}`];
 	navItems[i].style.color = 'green';
 }
+
+//Insert two elements into the nav bar
+
+const nav = document.getElementsByTagName('nav')[0];
+
+const navI = document.createElement('a');
+navI.textContent = 'Home';
+navI.style.color = 'green';
+
+const navI2 = document.createElement('a');
+navI2.textContent = 'News';
+navI2.style.color = 'green';
+
+nav.prepend(navI);
+nav.append(navI2);
+

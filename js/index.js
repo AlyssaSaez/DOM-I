@@ -64,3 +64,8 @@ navI2.style.color = 'green';
 nav.prepend(navI);
 nav.append(navI2);
 
+//Update CTA
+
+const ctaH1 = (document.querySelector('.cta .cta-text h1').textContent = siteContent.cta['h1']);
+const ctaImg = (document.querySelector('#cta-img').src = siteContent.cta['img-src']);
+const ctaButton = (document.querySelector('.cta .cta-text button').textContent = siteContent.cta['button']);
